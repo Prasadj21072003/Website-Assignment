@@ -1,0 +1,40 @@
+.page {
+  width: 98%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+
+  span {
+    position: relative;
+    left: 10px;
+  }
+  .pagination {
+    position: relative;
+    right: 10px;
+
+    button {
+      padding: 4px 10px;
+      -webkit-box-shadow: 1px 4px 20px -7px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 1px 4px 20px -7px rgba(0, 0, 0, 0.75);
+      box-shadow: 1px 4px 20px -7px rgba(0, 0, 0, 0.75);
+      color: black;
+      border: 1px solid rgb(239, 252, 255);
+      margin: 0px 5px;
+      border-radius: 8px;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #2198e7;
+        color: white;
+      }
+    }
+    .active {
+      background-color: #2198e7;
+      color: white;
+    }
+  }
+}
